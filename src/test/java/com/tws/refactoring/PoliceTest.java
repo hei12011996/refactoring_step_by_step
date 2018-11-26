@@ -10,12 +10,12 @@ public class PoliceTest {
     @Test
     public void should_return_true_when_police_check_an_adult_driver(){
         Driver adultDriver = new Driver(18);
-        assertTrue(police.checkDriver(adultDriver));
+        assertTrue(police.checkIfDriverIsAdult(adultDriver));
     }
 
     @Test
     public void should_return_false_when_police_check_an_teenager_driver(){
         Driver adultDriver = new Driver(5);
-        assertFalse(police.checkDriver(adultDriver));
+        assertFalse(police.checkIfDriverIsAdult(adultDriver));
     }
 }
